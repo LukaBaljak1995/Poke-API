@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/pokemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pokemonName"
+            android:layout_marginLeft="230dp"
+            android:onClick="Display"
+            android:text="Display" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="132dp"
+            android:text="Height:" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             android:layout_marginTop="178dp"
+            android:text="Weight:" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             android:layout_marginTop="226dp"
+            android:text="Type:" />
+
+        <TextView
+            android:id="@+id/textViewHeight"
+            android:layout_width="105dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+             />
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_alignTop="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textViewType"
+            android:layout_width="99dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginLeft="50dp" />
+
+        <ImageView
+            android:id="@+id/pokeImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/pokemonName"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="180dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="129dp"
+            android:text="Progres:" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+           />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
